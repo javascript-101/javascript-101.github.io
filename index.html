@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript 101 - Workshop introductorio a la programación con JavaScript</title>
+  <meta name="author" content="Nicolas Quiroz">
+  <meta name="description" content="JavaScript 101">
+  <meta name="theme-color" content="#333430">
+  <link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
+  <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#fce561">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <main class="container">
+      <div class="parent">
+        <div class="left">
+          <div class="left-text">
+            <h2 class="subtitle"><em>Workshop introductorio a la programación con <strong>JavaScript</strong></em></h2>
+          </div>
+        </div>
+        <div class="right">
+          <img src="images/logo.svg" class="logo" alt="JavaScript 101 logo">
+        </div>
+      </div>
+      <div class="event">
+        <p class="event-date">Sábado 21 de Octubre</p>
+        <p class="event-signup"><a class="signup-a" href="https://www.eventbrite.com.ar/e/js-101-s01e06-tickets-38975386430" target="_blank" rel="noopener"> Inscribite</a></p>
+      </div>
+      <div class="icons">
+        <div class="slack">
+          <p><a class="slack-a" href="slack://channel?team=T0434657X&id=C47EXAB0V"><i data-feather="slack" class="icon"></i></a></p>
+        </div>
+        <div class="exercises">
+          <p><a class="exercises-a" href="https://github.com/javascript-101/javascript-101" target="_blank" rel="noopener"><i data-feather="github" class="icon github-icon"></i></a></p>
+        </div>
+        <div class="twitter">
+          <p><a class="twitter-a" href="https://twitter.com/javascript_101" target="_blank" rel="noopener"><i data-feather="twitter" class="icon twitter-icon"></i></a></p>
+        </div>
+      </div>
+    </div>
+    </main>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+  WebFont.load({google:{families:['Fira Sans:400,700', 'Droid Sans:400,700']}})
+  </script>
+  <script>
+  feather.replace()
+  // Register Service Worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('service-worker.js')
+      .then(() => {
+        console.log('Service Worker registered')
+      })
+  }
+  </script>
+</body>
+</html>

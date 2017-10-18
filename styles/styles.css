@@ -1,0 +1,192 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --js-yellow-color: #fce561;
+  --js-grey-color: #333430;
+  --gold-color: #d1ca9f;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: var(--js-grey-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+#app {
+  position: relative;
+  width: 100%;
+}
+
+#app:after {
+  content : '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../images/background.jpg') no-repeat center center fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.04;
+  z-index: -1;
+  background-position: 50% 0;
+  background-size: cover;
+  -webkit-filter: blur(1.5px);
+          filter: blur(1.5px);
+}
+
+.parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+
+.left {
+  max-width: 600px;
+}
+
+.right {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 310px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50% 30% 20%;
+  margin: 0 auto;
+}
+
+.event {
+  text-align: center;
+  margin-top: 24px;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.signup-a {
+  color: var(--js-yellow-color);
+  border: 2px solid var(--js-yellow-color);
+}
+
+.signup-a:hover {
+  color: var(--js-grey-color);
+  background: var(--js-yellow-color);
+}
+
+.exercises-a, .slack-a, .twitter-a {
+  color: var(--gold-color);
+}
+
+.exercises-a:hover, .slack-a:hover, .twitter-a:hover {
+  color: var(--js-yellow-color);
+}
+
+.event-date, .signup-a {
+  margin: 0 auto;
+}
+
+.signup-a {
+  font-size: 1.55em;
+  color: var(--js-yellow-color);
+}
+
+.event-date {
+  font-size: 1.3em;
+  color: var(--gold-color);
+  margin-bottom: 24px;
+}
+
+.signup-a {
+  padding: 4px 18px;
+  border-radius: 4px;
+}
+
+.subtitle {
+  font-size: 2.25em;
+  font-weight: 400;
+  color: #fafafa;
+  display: none;
+  margin-right: 24px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon {
+  display: inline-block;
+  stroke-width: 1.25;
+  margin-right: 48px;
+  width: 36px;
+  height: 36px;
+}
+
+.icon:hover {
+  stroke-width: 1.5;
+}
+
+.twitter-icon {
+  margin-right: 0;
+}
+
+.logo {
+  height: 235px;
+}
+
+@media only screen and (min-width: 400px) {
+  .event-date {
+    font-size: 1.45em;
+  }
+
+  .logo {
+    height: 210px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .subtitle {
+    display: block;
+  }
+}
